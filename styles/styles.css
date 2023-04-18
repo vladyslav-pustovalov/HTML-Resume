@@ -17,7 +17,16 @@ body {
 .main_content {
     background-color: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 105px 90px;
+    padding: 90px 90px;
+}
+
+.main_page_titels {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
 }
 
 /* about styles */
@@ -29,7 +38,7 @@ body {
 .about_position {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 17px;
     color: #000000;
     margin-bottom: 20px;
@@ -46,60 +55,12 @@ body {
 
 .about_description {
     font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #595959;
-width: 400px;
-margin-bottom: 40px;
-}
-
-/* projects */
-
-.projects {
-    margin-bottom: 50px;
-} 
-
-.main_page_titels {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.projects_list {
-    padding: 0;
-    margin-left: 15px;
-}
-
-.project_item {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.projects_text , .projects_link {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #595959;
-}
-
-.projects_brackets {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000000;
-}
-
-.projects_link {
-    margin-left: 10px;
+    width: 650px;
+    margin-bottom: 40px;
 }
 
 /* work styles */
@@ -155,6 +116,45 @@ margin-bottom: 40px;
     color: #595959;
 }
 
+/* projects */
+
+.projects {
+    margin-bottom: 50px;
+}
+
+.projects_list {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.project_item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.projects_text , .projects_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.projects_brackets {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.projects_link {
+    margin-left: 10px;
+}
+
 /* education styles */
 
 .education {
@@ -175,27 +175,23 @@ margin-bottom: 40px;
 
 .sidebar {
     background-color: #1E2939;
-    padding-top: 40px;
+    padding-top: 5px;
     width: 370px;
 }    
 
 .photo {
-    width: 370px;
-    margin-bottom: 50px;
+    width: 360px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px:
 }
 
-.contacts , 
-.tech_skills , 
-.soft_skills {
+.contacts ,
+.tech_skills ,
+.soft_skills ,
+.languages {
     margin-left: 40px;
-}
-
-.contacts {
-    margin-bottom: 50px;
-}
-
-.tech_skills {
-    margin-bottom: 45px;
+    margin-right: 40px;
 }
 
 .sidebar_title {
