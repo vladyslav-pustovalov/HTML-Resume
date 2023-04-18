@@ -1,6 +1,6 @@
 # HTML-Resume
 ### This repository is created for [Vladyslav Pustovalov](https://vladyslav-pustovalov.github.io/HTML-Resume/)'s resume
-### Here is the Resume itself
+### Here is the screenshot of the Resume itself
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/vladyslav-pustovalov/HTML-Resume/blob/main/img/Resume%20Vladyslav%20Pustovalov.jpg">
