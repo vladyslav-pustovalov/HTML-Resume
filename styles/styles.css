@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
+    height: 1698px;
     margin: 0 auto;
 }    
 
@@ -30,10 +31,6 @@ body {
 }
 
 /* about styles */
-
-.about {
-
-}
 
 .about_position {
     font-style: normal;
@@ -153,12 +150,6 @@ body {
 
 .projects_link {
     margin-left: 10px;
-}
-
-/* education styles */
-
-.education {
-    
 }
 
 .department {
