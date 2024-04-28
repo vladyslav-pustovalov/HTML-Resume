@@ -81,6 +81,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #FB6D3A;
+    margin-bottom: 2px;
 }
 
 .period {
@@ -90,6 +91,7 @@ body {
     line-height: 15px;
     color: #A8A8A8;
     margin-bottom: 10px;
+    margin-top: 2px;
 }
 
 .line {
@@ -159,7 +161,7 @@ body {
     line-height: 17px;
     color: #000000;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 /* sidebar styles */
@@ -168,7 +170,7 @@ body {
     background-color: #1E2939;
     padding-top: 5px;
     width: 370px;
-}    
+}
 
 .photo {
     width: 360px;
@@ -214,7 +216,7 @@ body {
 
 .skills_list {
     color: #FFFFFF;
-    padding: 0px;
+    padding: 0;
     margin-left: 15px;
 }
 
