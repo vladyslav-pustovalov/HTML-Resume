@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
-    height: 1698px;
+    height: 1800px;
     margin: 0 auto;
 }    
 
@@ -174,7 +174,7 @@ body {
 
 .photo {
     width: 360px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 5px;
     margin-right: 5px;
 }
