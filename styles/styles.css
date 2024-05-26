@@ -11,7 +11,7 @@ body {
     width: 1200px;
     height: 1800px;
     margin: 0 auto;
-}    
+}
 
 /* styles main_content */
 
@@ -21,7 +21,7 @@ body {
     padding: 90px 90px;
 }
 
-.main_page_titels {
+.main_page_titles {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -32,13 +32,17 @@ body {
 
 /* about styles */
 
+.about {
+    margin-bottom: 120px;
+}
+
 .about_position {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 17px;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .about_name {
@@ -48,16 +52,6 @@ body {
     line-height: 55px;
     color: #000000;
     margin-bottom: 25px;
-}
-
-.about_description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #595959;
-    width: 650px;
-    margin-bottom: 40px;
 }
 
 /* work styles */
@@ -134,7 +128,7 @@ body {
     color: #000000;
 }
 
-.projects_text , .projects_link {
+.projects_text, .projects_link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -174,14 +168,14 @@ body {
 
 .photo {
     width: 360px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.contacts ,
-.tech_skills ,
-.soft_skills ,
+.contacts,
+.tech_skills,
+.soft_skills,
 .languages {
     margin-left: 40px;
     margin-right: 40px;
@@ -196,9 +190,15 @@ body {
     margin-bottom: 10px;
 }
 
+.contact_list {
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 0;
+}
+
 .contact_type {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 550;
     font-size: 14px;
     line-height: 24px;
     color: #FFFFFF;
@@ -210,7 +210,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #8E949C;
+    color: #dfd9d9;
     opacity: 0.5;
 }
 
