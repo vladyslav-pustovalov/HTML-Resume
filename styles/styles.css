@@ -18,7 +18,7 @@ body {
 .main_content {
     background-color: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 90px 90px;
+    padding: 5px 90px;
 }
 
 .main_page_titles {
@@ -33,7 +33,7 @@ body {
 /* about styles */
 
 .about {
-    margin-bottom: 120px;
+    margin-bottom: 75px;
 }
 
 .about_position {
@@ -42,7 +42,6 @@ body {
     font-size: 22px;
     line-height: 17px;
     color: #000000;
-    margin-bottom: 45px;
 }
 
 .about_name {
@@ -162,15 +161,10 @@ body {
 
 .sidebar {
     background-color: #1E2939;
-    padding-top: 5px;
-    width: 370px;
-}
+    padding-top: 90px;
+    width: 500px;
 
-.photo {
-    width: 360px;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-right: 5px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .contacts,
