@@ -21,7 +21,8 @@ body {
     padding: 5px 90px;
 }
 
-.main_page_titles {
+.main_page_titles,
+.project_title{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -55,7 +56,8 @@ body {
 
 /* work styles */
 
-.work {
+.work,
+.projects {
     margin-bottom: 45px;
 }
 
@@ -117,22 +119,26 @@ body {
 .projects_list {
     padding: 0;
     margin-left: 15px;
+    margin-top: 5px;
 }
 
 .project_item {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: #535353;
 }
 
-.projects_text, .projects_link {
+.projects_text,
+.projects_link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: #595959;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .projects_brackets {
@@ -161,7 +167,7 @@ body {
 
 .sidebar {
     background-color: #1E2939;
-    padding-top: 90px;
+    padding-top: 30px;
     width: 500px;
 
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
