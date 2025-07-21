@@ -170,11 +170,7 @@ body {
 .contacts,
 .tech_skills,
 .soft_skills,
-.languages {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
+.languages,
 .education {
     margin-left: 40px;
     margin-right: 40px;
