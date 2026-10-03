@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
-    height: 1800px;
+    height: 1683px;
     margin: 0 auto;
 }
 
@@ -209,4 +209,25 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+@media print {
+    @page {
+        size: A4;
+        page-orientation: inherit;
+        /*margin: 0;*/
+    }
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .main {
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        margin: 0 !important;
+    }
 }
