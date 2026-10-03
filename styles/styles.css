@@ -254,11 +254,10 @@ body {
     line-height: 1.35;
 }
 
-/* Print & PDF Export (Exactly 1 Page A4 for Chrome and Safari) */
+/* Print & PDF Export (Exactly 1 Page A4 using Browser Default Margins) */
 @media print {
     @page {
         size: A4 portrait;
-        margin: 8mm 10mm 8mm 10mm;
     }
 
     html, body {
