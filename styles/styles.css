@@ -210,23 +210,22 @@ body {
     text-decoration: underline;
 }
 
-/* Bottom Columns (Education & Languages) */
-.bottom_columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+/* Education (Full Width) */
+.education {
+    margin-bottom: 16px;
 }
 
 .education_list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
 
 .education_item {
     display: flex;
-    flex-direction: column;
-    font-size: 12px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12.5px;
     line-height: 1.35;
 }
 
@@ -239,19 +238,26 @@ body {
     font-weight: 500;
     color: #4A5568;
     font-style: italic;
+    font-size: 11.5px;
 }
 
-.languages_list {
-    list-style: none;
+/* Languages (Full Width Inline Row) */
+.languages {
+    margin-bottom: 0;
+}
+
+.languages_inline {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: #334155;
 }
 
 .lang_item {
-    font-size: 12px;
-    color: #334155;
-    line-height: 1.35;
+    font-weight: 500;
+    color: #1A1A1A;
 }
 
 /* Print & PDF Export (Fits on 1 Page for both A4 & US Letter in Safari & Chrome) */
@@ -301,7 +307,7 @@ body {
 
     .section_title {
         font-size: 13px;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
         padding-bottom: 2px;
         break-after: avoid;
         page-break-after: avoid;
@@ -311,12 +317,12 @@ body {
         margin-bottom: 8px;
     }
 
-    .skills_grid {
-        gap: 2px 20px;
+    .skills_list {
+        gap: 2px;
     }
 
     .skills_item {
-        font-size: 11px;
+        font-size: 10.5px;
         line-height: 1.3;
     }
 
@@ -325,7 +331,7 @@ body {
     }
 
     .work_entry {
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
 
     .work_header {
@@ -335,15 +341,15 @@ body {
     }
 
     .work_position {
-        font-size: 12.5px;
+        font-size: 12px;
     }
 
     .period {
-        font-size: 10.5px;
+        font-size: 10px;
     }
 
     .work_list_item {
-        font-size: 11px;
+        font-size: 10.5px;
         line-height: 1.3;
         margin-bottom: 1px;
     }
@@ -353,32 +359,41 @@ body {
     }
 
     .project_position {
-        font-size: 12.5px;
+        font-size: 12px;
         break-after: avoid;
         page-break-after: avoid;
     }
 
     .projects_text {
-        font-size: 11px;
+        font-size: 10.5px;
         line-height: 1.3;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
 
     .project_item a {
-        font-size: 10.5px;
+        font-size: 10px;
     }
 
-    .bottom_columns {
-        gap: 16px;
+    .education {
+        margin-bottom: 8px;
     }
 
     .education_list {
-        gap: 4px;
+        gap: 3px;
     }
 
-    .education_item, .lang_item {
+    .education_item {
         font-size: 10.5px;
         line-height: 1.25;
+    }
+
+    .languages_inline {
+        font-size: 10.5px;
+        gap: 6px;
+    }
+
+    .lang_item {
+        font-size: 10.5px;
     }
 
     .contact_link, .project_item a {
@@ -390,7 +405,7 @@ body {
     }
 
     /* Keep individual entries together and prevent orphaned titles */
-    .work_entry, .project_entry, .education_item, .lang_item {
+    .work_entry, .project_entry, .education_item, .skills_item {
         break-inside: avoid;
         page-break-inside: avoid;
     }
