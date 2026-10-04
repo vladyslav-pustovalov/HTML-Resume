@@ -8,211 +8,222 @@
     <link href="styles/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Resume Vladyslav Pustovalov</title>
 </head>
 
 <body>
-<!-- Main -->
 <div class="main">
-    <!-- Main content -->
-    <div class="main_content">
-        <!-- about user -->
-        <section class="about">
+    <!-- Header / About user -->
+    <header class="header">
+        <h1 class="about_name">Vladyslav Pustovalov</h1>
+        <h2 class="about_position">Automation Quality Assurance Engineer</h2>
+        <div class="contacts">
+            <a class="contact_link" target="_blank" href="https://www.google.com/maps/place/Katowice,+Poland">Poland,
+                Katowice</a>
+            <span class="delimiter">•</span>
+            <a class="contact_link" target="_blank" href="mailto:vladyslav.pustovalov@gmail.com">vladyslav.pustovalov@gmail.com</a>
+            <span class="delimiter">•</span>
+            <a class="contact_link" target="_blank" href="tel:+48793670638">+48 793 670 638</a>
+            <span class="delimiter">•</span>
+            <a class="contact_link" target="_blank"
+               href="https://www.linkedin.com/in/vladyslav-pustovalov/">LinkedIn</a>
+            <span class="delimiter">•</span>
+            <a class="contact_link" target="_blank" href="https://github.com/vladyslav-pustovalov">GitHub</a>
+        </div>
+    </header>
 
-            <H1 class="about_name">Vladyslav Pustovalov</H1>
+    <!-- Skills -->
+    <section class="section">
+        <h3 class="section_title">Skills</h3>
+        <ul class="skills_grid">
+            <li class="skills_item"><span class="skills_category">Languages:</span> <span class="skills_text">Swift, Kotlin, Java</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">CI/CD & DevOps:</span> <span class="skills_text">GitHub Actions, Jenkins, Docker</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Mobile Automation:</span> <span class="skills_text">XCUITest, Espresso, Appium</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">API:</span> <span class="skills_text">REST Assured, Postman</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Web Automation:</span> <span class="skills_text">Selenium, Selenide</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Databases:</span> <span class="skills_text">SQL (MySQL, PostgreSQL)</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Code:</span> <span class="skills_text">OOP principles, SOLID, Design patterns</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Network & Analysis:</span> <span class="skills_text">Proxyman, Charles Proxy</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">AI-Assisted Tools:</span> <span class="skills_text">LLM Prompting (Claude, ChatGPT, GitHub Copilot)</span>
+            </li>
+            <li class="skills_item"><span class="skills_category">Test Management & Tools:</span> <span
+                    class="skills_text">Jira, Confluence, TestRail, Xray</span></li>
+        </ul>
+    </section>
 
-            <H2 class="about_position">Automation Quality Assurance Engineer</H2>
+    <!-- Work Experience -->
+    <section class="section">
+        <h3 class="section_title">Work Experience</h3>
 
-        </section>
-        <!-- Work -->
-        <section class="work">
-            <H3 class="main_page_titles">Work Experience</H3>
-
-            <!-- Ryanair -->
-            <div>
-                <H4 class="work_position">Automation QA Engineer at <span class="organization"> Ryanair</span></H4>
+        <!-- Ryanair -->
+        <div class="work_entry">
+            <div class="work_header">
+                <h4 class="work_position">Automation QA Engineer at <span class="organization">Ryanair</span></h4>
                 <h5 class="period">November 2025 - Present <span class="line">|</span> Poland (Remote)</h5>
-                <ul class="work_list">
-                    <li class="work_list_item">
-                        Implemented E2E mobile UI tests for iOS (XCUITest) and Android (Espresso)
-                    </li>
-                    <li class="work_list_item">
-                        Migrated the test suite to a modernized DSL to improve readability, simplify the project and
-                        make adding new tests easier and faster
-                    </li>
-                    <li class="work_list_item">
-                        Managed release candidate verifications to ensure application release readiness
-                    </li>
-                    <li class="work_list_item">
-                        Identified critical root causes for high-severity defects and successfully advocated for priority
-                        fixes, preventing major production failures
-                    </li>
-                </ul>
             </div>
+            <ul class="work_list">
+                <li class="work_list_item">
+                    Implemented E2E mobile UI tests for iOS (XCUITest) and Android (Espresso)
+                </li>
+                <li class="work_list_item">
+                    Migrated the test suite to a modernized DSL to improve readability, simplify the project and
+                    make adding new tests easier and faster
+                </li>
+                <li class="work_list_item">
+                    Managed release candidate verifications to ensure application release readiness
+                </li>
+                <li class="work_list_item">
+                    Identified critical root causes for high-severity defects and successfully advocated for priority
+                    fixes, preventing major production failures
+                </li>
+            </ul>
+        </div>
 
-            <!-- MacPaw -->
-            <div>
-                <H4 class="work_position">QA Engineer at <span class="organization"> MacPaw</span></H4>
+        <!-- MacPaw -->
+        <div class="work_entry">
+            <div class="work_header">
+                <h4 class="work_position">QA Engineer at <span class="organization">MacPaw</span></h4>
                 <h5 class="period">August 2024 - October 2025 <span class="line">|</span> Poland (Remote)</h5>
-                <ul class="work_list">
-                    <li class="work_list_item">
-                        Collaborated with design and engineering during architecture and sprint planning
-                    </li>
-                    <li class="work_list_item">
-                        Served as primary QA for E2E releases of the application
-                    </li>
-                    <li class="work_list_item">
-                        Scaled UI E2E regression test suite using Swift and XCUITest
-                    </li>
-                </ul>
             </div>
+            <ul class="work_list">
+                <li class="work_list_item">
+                    Collaborated with design and engineering during architecture and sprint planning
+                </li>
+                <li class="work_list_item">
+                    Served as primary QA for E2E releases of the application
+                </li>
+                <li class="work_list_item">
+                    Scaled UI E2E regression test suite using Swift and XCUITest
+                </li>
+            </ul>
+        </div>
 
-            <!-- SuperUnlimited -->
-            <div>
-                <H4 class="work_position">QA Engineer at <span class="organization"> SuperUnlimited</span></H4>
+        <!-- SuperUnlimited -->
+        <div class="work_entry">
+            <div class="work_header">
+                <h4 class="work_position">QA Engineer at <span class="organization">SuperUnlimited</span></h4>
                 <h5 class="period">July 2023 - July 2024 <span class="line">|</span> Ukraine (Remote)</h5>
-                <ul class="work_list">
-                    <li class="work_list_item">
-                        Contributed to the success of the top-level VPN product (top 3 in Apple App Store and Google
-                        Play)
-                    </li>
-                    <li class="work_list_item">
-                        Developed an automated API test suite, streamlining pre-release regression verification
-                    </li>
-                    <li class="work_list_item">
-                        Conducted an internal "Test Automation with Java from scratch" training course
-                    </li>
-                    <li class="work_list_item">
-                        Brought code review practice to the QA team
-                    </li>
-                    <li class="work_list_item">
-                        Refactored automation API tests according to OOP concepts
-                    </li>
-                    <li class="work_list_item">
-                        Created framework for UI automation (Mobile and Web)
-                    </li>
-                </ul>
             </div>
+            <ul class="work_list">
+                <li class="work_list_item">
+                    Contributed to the success of the top-level VPN product (top 3 in Apple App Store and Google
+                    Play)
+                </li>
+                <li class="work_list_item">
+                    Developed an automated API test suite, streamlining pre-release regression verification
+                </li>
+                <li class="work_list_item">
+                    Conducted an internal "Test Automation with Java from scratch" training course
+                </li>
+                <li class="work_list_item">
+                    Brought code review practice to the QA team
+                </li>
+                <li class="work_list_item">
+                    Refactored automation API tests according to OOP concepts
+                </li>
+                <li class="work_list_item">
+                    Created framework for UI automation (Mobile and Web)
+                </li>
+            </ul>
+        </div>
 
-            <!-- Technomatix -->
-            <div>
-                <H4 class="work_position">QA Engineer at <span class="organization"> Technomatix</span></H4>
+        <!-- Technomatix -->
+        <div class="work_entry">
+            <div class="work_header">
+                <h4 class="work_position">QA Engineer at <span class="organization">Technomatix</span></h4>
                 <h5 class="period">October 2022 - June 2023 <span class="line">|</span> Ukraine (Remote)</h5>
-                <ul class="work_list">
-                    <li class="work_list_item">
-                        Held product presentations for customers
-                    </li>
-                    <li class="work_list_item">
-                        Created new features user guides for customers
-                    </li>
-                    <li class="work_list_item">
-                        Refactored legacy test suites and expanded scenario coverage
-                    </li>
-                </ul>
             </div>
-        </section>
-        <!-- Projects -->
-        <section class="projects">
-            <H3 class="project_title">Projects</H3>
-            <div>
-                <H4 class="project_item"><span class="organization">The Discipline Program</span> Mobile Apps (iOS & Android) & Backend</H4>
-                <h5 class="projects_text">
-                    Developed native mobile clients (iOS & Android) designed to track structured CrossFit workout regimens.
-                    Integrated with a custom Java backend service before migrating to an external platform API.
-                </h5>
-                <ul class="projects_list">
-                    <li class="project_item">
-                        <a target="_blank"
-                           href="https://github.com/vladyslav-pustovalov/the-discipline-program-ios">iOS app repository
-                        </a>
-                    </li>
-                    <li class="project_item">
-                        <a target="_blank"
-                           href="https://github.com/vladyslav-pustovalov/the-discipline-program-android">Android app repository
-                        </a>
-                    </li>
-                    <li class="project_item">
-                        <a target="_blank"
-                           href="https://github.com/vladyslav-pustovalov/the-discipline-program">Legacy backend
-                        </a>
-                    </li>
-                </ul>
+            <ul class="work_list">
+                <li class="work_list_item">
+                    Held product presentations for customers
+                </li>
+                <li class="work_list_item">
+                    Created new features user guides for customers
+                </li>
+                <li class="work_list_item">
+                    Refactored legacy test suites and expanded scenario coverage
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+        <h3 class="section_title">Projects</h3>
+        <div class="project_entry">
+            <h4 class="project_position"><span class="organization">The Discipline Program</span> Mobile Apps (iOS &
+                Android) & Backend</h4>
+            <p class="projects_text">
+                Developed native mobile clients (iOS & Android) designed to track structured CrossFit workout regimens.
+                Integrated with a custom Java backend service before migrating to an external platform API.
+            </p>
+            <ul class="projects_list">
+                <li class="project_item">
+                    <a target="_blank"
+                       href="https://github.com/vladyslav-pustovalov/the-discipline-program-ios">iOS app repository</a>
+                </li>
+                <li class="project_item">
+                    <a target="_blank"
+                       href="https://github.com/vladyslav-pustovalov/the-discipline-program-android">Android app
+                        repository</a>
+                </li>
+                <li class="project_item">
+                    <a target="_blank"
+                       href="https://github.com/vladyslav-pustovalov/the-discipline-program">Legacy backend</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <h3 class="section_title">Education</h3>
+        <div class="education_list">
+            <div class="education_item">
+                <span class="edu_title">Basic Android development course</span>
+                <span class="period">January 2026 - October 2026</span>
             </div>
-        </section>
-    </div>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <!-- Contacts -->
-        <section class="contacts">
-            <H3 class="sidebar_title">Contacts</H3>
-            <div>
-                <dl class="contact_list">
-                    <dt>
-                        <a class="contact_link" target="_blank"
-                           href="tel:+48 793 670 638" style="text-decoration: none;"> +48 793 670 638</a></dt>
-                    <dt>
-                        <a class="contact_link" target="_blank"
-                           href="mailto:vladyslav.pustovalov@gmail.com">vladyslav.pustovalov@gmail.com</a></dt>
-                    <dt>
-                        <a class="contact_link" target="_blank"
-                           href="https://maps.app.goo.gl/Nib9PmC3tXz6ngJc6">Poland, Katowice</a></dt>
-                    <dt>
-                        <a class="contact_link" target="_blank"
-                           href="https://www.linkedin.com/in/vladyslav-pustovalov/">LinkedIn</a></dt>
-                    <dt>
-                        <a class="contact_link" target="_blank"
-                           href="https://github.com/vladyslav-pustovalov">GitHub</a></dt>
-                </dl>
+            <div class="education_item">
+                <span class="edu_title">100 Days of Swift course</span>
+                <span class="period">March 2025 – May 2025</span>
             </div>
-        </section>
-        <!-- Skills -->
-        <section class="skills">
-            <H3 class="sidebar_title">Skills</H3>
-            <ul class="skills_list">
-                <li class="skills_item"><span class="skills_text">Languages: Swift, Kotlin, Java</span></li>
-                <li class="skills_item"><span class="skills_text">Mobile Automation: XCUITest, Espresso, Appium</span></li>
-                <li class="skills_item"><span class="skills_text">Web Automation: Selenium, Selenide</span></li>
-                <li class="skills_item"><span class="skills_text">API: REST Assured, Postman</span></li>
-                <li class="skills_item"><span class="skills_text">Code: OOP principles, Code smells, SOLID, Design patterns</span></li>
-                <li class="skills_item"><span class="skills_text">Databases: SQL (MySQL, PostgreSQL)</span></li>
-                <li class="skills_item"><span class="skills_text">CI/CD & DevOps: GitHub Actions, Jenkins, Docker</span></li>
-                <li class="skills_item"><span class="skills_text">Network & Analysis: Proxyman, Charles Proxy</span></li>
-                <li class="skills_item"><span class="skills_text">Git: GitHub, Bitbucket</span></li>
-                <li class="skills_item"><span class="skills_text">Test Management & Tools: Jira, Confluence, TestRail, Xray</span></li>
-            </ul>
-        </section>
-        <!-- Languages -->
-        <section class="languages">
-            <H3 class="sidebar_title">Languages</H3>
-            <ul class="skills_list">
-                <li class="skills_item"><span class="skills_text">English - Upper intermediate</span></li>
-                <li class="skills_item"><span class="skills_text">Ukrainian - Native</span></li>
-                <li class="skills_item"><span class="skills_text">Russian - Native</span></li>
-                <li class="skills_item"><span class="skills_text">Polish - Pre intermediate</span></li>
-            </ul>
-        </section>
-        <!-- Education -->
-        <section class="education">
-            <H3 class="sidebar_title">Education</H3>
-            <ul class="skills_list">
-                <li class="skills_item"><span class="skills_text">Basic Android development course</span></li>
-                <h5 class="period">January 2026 - October 2026</h5>
+            <div class="education_item">
+                <span class="edu_title">Java Automation QA course</span>
+                <span class="period">November 2022 – April 2023</span>
+            </div>
+            <div class="education_item">
+                <div>
+                    <span class="edu_title">Kharkiv Aviation University</span>
+                    <span class="department">- Internal Combustion Engines</span>
+                </div>
+                <span class="period">September 2014 – October 2015</span>
+            </div>
+        </div>
+    </section>
 
-                <li class="skills_item"><span class="skills_text">100 Days of Swift course</span></li>
-                <h5 class="period">March 2025 – May 2025</h5>
-
-                <li class="skills_item"><span class="skills_text">Java Automation QA course</span></li>
-                <h5 class="period">November 2022 – April 2023</h5>
-
-                <li class="skills_item"><span class="skills_text">Kharkiv Aviation University</span></li>
-                <h4 class="department">Internal Combustion Engines</h4>
-                <h5 class="period">September 2014 – October 2015</h5>
-            </ul>
-        </section>
-    </aside>
+    <!-- Languages -->
+    <section class="section">
+        <h3 class="section_title">Languages</h3>
+        <div class="languages_inline">
+            <span class="lang_item">English - Working Proficiency</span>
+            <span class="delimiter">•</span>
+            <span class="lang_item">Ukrainian - Native</span>
+            <span class="delimiter">•</span>
+            <span class="lang_item">Russian - Native</span>
+            <span class="delimiter">•</span>
+            <span class="lang_item">Polish - Elementary</span>
+        </div>
+    </section>
 </div>
-
 </body>
 
 </html>
