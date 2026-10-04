@@ -1,21 +1,17 @@
 :root {
-    /* Color Palette - Brand & Accents */
     --color-primary: #FB6D3A;
 
-    /* Color Palette - Text */
     --color-text-heading: #000000;
     --color-text-main: #1A1A1A;
     --color-text-body: #334155;
     --color-text-muted: #4A5568;
     --color-text-subtle: #718096;
 
-    /* Color Palette - Backgrounds & Borders */
     --color-bg-page: #F5F7FA;
     --color-bg-card: #FFFFFF;
     --color-border-header: #F0F2F5;
     --color-divider: #CBD5E1;
 
-    /* Typography - Font Sizes */
     --font-size-hero: 32px;
     --font-size-section-title: 16px;
     --font-size-entry-title: 14px;
@@ -25,7 +21,6 @@
     --font-size-subxs: 11.5px;
     --font-size-xs: 11px;
 
-    /* Typography - Font Weights */
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -39,13 +34,12 @@
 
 body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: var(--color-bg-page);
+    background-color: var(--color-bg-card);
     color: var(--color-text-main);
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Main Container */
 .main {
     width: 100%;
     max-width: 800px;
@@ -56,7 +50,6 @@ body {
     border-radius: 4px;
 }
 
-/* Header */
 .header {
     text-align: center;
     padding-bottom: 12px;
@@ -110,7 +103,6 @@ body {
     margin-bottom: 16px;
 }
 
-/* Section Common Titles */
 .section_title {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-section-title);
@@ -123,7 +115,6 @@ body {
     border-bottom: 1.5px solid var(--color-text-heading);
 }
 
-/* Skills Section */
 .skills_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -147,7 +138,6 @@ body {
     color: var(--color-text-muted);
 }
 
-/* Work Experience */
 .work_entry {
     margin-bottom: 12px;
 }
@@ -198,7 +188,6 @@ body {
     margin-bottom: 2px;
 }
 
-/* Projects */
 .project_entry {
     margin-bottom: 4px;
 }
@@ -235,7 +224,6 @@ body {
     text-decoration: underline;
 }
 
-/* Education (Full Width) */
 .education_list {
     display: flex;
     flex-direction: column;
@@ -262,7 +250,6 @@ body {
     font-size: var(--font-size-subxs);
 }
 
-/* Languages (Full Width Inline Row) */
 .languages_inline {
     display: flex;
     flex-wrap: wrap;
@@ -277,14 +264,23 @@ body {
     color: var(--color-text-main);
 }
 
-/* Print & PDF Export (Fits on 1 Page for both A4 & US Letter in Safari & Chrome) */
 @media print {
+    :root {
+        --font-size-hero: 28px;
+        --font-size-section-title: 13px;
+        --font-size-entry-title: 12px;
+        --font-size-contacts: 12px;
+        --font-size-body: 11.5px;
+        --font-size-sm: 11px;
+        --font-size-subxs: 11px;
+        --font-size-xs: 11px;
+    }
+
     @page {
         size: A4 portrait;
     }
 
     html, body {
-        background-color: var(--color-bg-card) !important;
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -299,81 +295,20 @@ body {
         padding: 0 !important;
         box-shadow: none !important;
         border-radius: 0 !important;
-        background-color: var(--color-bg-card) !important;
-    }
-
-    .about_name {
-        font-size: 28px;
-    }
-
-    .contacts {
-        font-size: var(--font-size-sm);
     }
 
     .section_title {
-        font-size: 13px;
         margin-bottom: 5px;
         padding-bottom: 2px;
         break-after: avoid;
         page-break-after: avoid;
     }
 
-    .skills_item {
-        font-size: var(--font-size-subxs);
-    }
-
-    .work_header {
+    .work_header, .project_position {
         break-after: avoid;
         page-break-after: avoid;
     }
 
-    .work_position {
-        font-size: var(--font-size-sm);
-    }
-
-    .period {
-        font-size: var(--font-size-xs);
-    }
-
-    .work_list_item {
-        font-size: var(--font-size-subxs);
-    }
-
-    .project_position {
-        break-after: avoid;
-        page-break-after: avoid;
-    }
-
-    .projects_text {
-        font-size: var(--font-size-subxs);
-    }
-
-    .project_item a {
-        font-size: var(--font-size-xs);
-    }
-
-    .education_item {
-        font-size: var(--font-size-subxs);
-    }
-
-    .languages_inline {
-        font-size: var(--font-size-subxs);
-        gap: 6px;
-    }
-
-    .lang_item {
-        font-size: var(--font-size-subxs);
-    }
-
-    .contact_link, .project_item a {
-        color: var(--color-text-main) !important;
-    }
-
-    .organization, .about_position {
-        color: var(--color-primary) !important;
-    }
-
-    /* Keep individual entries together and prevent orphaned titles */
     .work_entry, .project_entry, .education_item, .skills_item {
         break-inside: avoid;
         page-break-inside: avoid;
