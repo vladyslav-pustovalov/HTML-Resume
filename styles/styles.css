@@ -1,3 +1,36 @@
+:root {
+    /* Color Palette - Brand & Accents */
+    --color-primary: #FB6D3A;
+
+    /* Color Palette - Text */
+    --color-text-heading: #000000;
+    --color-text-main: #1A1A1A;
+    --color-text-body: #334155;
+    --color-text-muted: #4A5568;
+    --color-text-subtle: #718096;
+
+    /* Color Palette - Backgrounds & Borders */
+    --color-bg-page: #F5F7FA;
+    --color-bg-card: #FFFFFF;
+    --color-border-header: #F0F2F5;
+    --color-divider: #CBD5E1;
+
+    /* Typography - Font Sizes */
+    --font-size-hero: 32px;
+    --font-size-section-title: 16px;
+    --font-size-entry-title: 14px;
+    --font-size-contacts: 13px;
+    --font-size-body: 12.5px;
+    --font-size-sm: 12px;
+    --font-size-subxs: 11.5px;
+    --font-size-xs: 11px;
+
+    /* Typography - Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +39,8 @@
 
 body {
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #F5F7FA;
-    color: #1A1A1A;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-main);
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
 }
@@ -18,7 +51,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 32px 40px;
-    background-color: #FFFFFF;
+    background-color: var(--color-bg-card);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
 }
@@ -28,23 +61,23 @@ body {
     text-align: center;
     padding-bottom: 12px;
     margin-bottom: 12px;
-    border-bottom: 2px solid #F0F2F5;
+    border-bottom: 2px solid var(--color-border-header);
 }
 
 .about_name {
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-hero);
     line-height: 1.2;
-    color: #000000;
+    color: var(--color-text-heading);
     margin-bottom: 4px;
     letter-spacing: -0.5px;
 }
 
 .about_position {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-section-title);
     line-height: 1.3;
-    color: #FB6D3A;
+    color: var(--color-primary);
     margin-bottom: 10px;
 }
 
@@ -54,23 +87,23 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
+    font-size: var(--font-size-contacts);
 }
 
 .contact_link {
-    color: #4A5568;
+    color: var(--color-text-muted);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .contact_link:hover {
-    color: #FB6D3A;
+    color: var(--color-primary);
     text-decoration: underline;
 }
 
 .delimiter {
-    color: #CBD5E1;
-    font-size: 11px;
+    color: var(--color-divider);
+    font-size: var(--font-size-xs);
 }
 
 .section {
@@ -79,15 +112,15 @@ body {
 
 /* Section Common Titles */
 .section_title {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-section-title);
     line-height: 1.3;
-    color: #000000;
+    color: var(--color-text-heading);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-bottom: 4px;
     margin-bottom: 10px;
-    border-bottom: 1.5px solid #000000;
+    border-bottom: 1.5px solid var(--color-text-heading);
 }
 
 /* Skills Section */
@@ -99,19 +132,19 @@ body {
 }
 
 .skills_item {
-    font-size: 12.5px;
+    font-size: var(--font-size-body);
     line-height: 1.4;
-    color: #2D3748;
+    color: var(--color-text-body);
 }
 
 .skills_category {
-    font-weight: 700;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-heading);
 }
 
 .skills_text {
-    font-weight: 400;
-    color: #4A5568;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-muted);
 }
 
 /* Work Experience */
@@ -131,25 +164,25 @@ body {
 }
 
 .work_position {
-    font-weight: 700;
-    font-size: 14px;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-entry-title);
+    color: var(--color-text-heading);
 }
 
 .organization {
-    color: #FB6D3A;
-    font-weight: 700;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
 }
 
 .period {
-    font-weight: 500;
-    font-size: 12px;
-    color: #718096;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-subtle);
     white-space: nowrap;
 }
 
 .line {
-    color: #CBD5E1;
+    color: var(--color-divider);
     margin: 0 2px;
 }
 
@@ -159,9 +192,9 @@ body {
 }
 
 .work_list_item {
-    font-size: 12.5px;
+    font-size: var(--font-size-body);
     line-height: 1.45;
-    color: #334155;
+    color: var(--color-text-body);
     margin-bottom: 2px;
 }
 
@@ -171,16 +204,16 @@ body {
 }
 
 .project_position {
-    font-weight: 700;
-    font-size: 14px;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-entry-title);
+    color: var(--color-text-heading);
     margin-bottom: 2px;
 }
 
 .projects_text {
-    font-size: 12.5px;
+    font-size: var(--font-size-body);
     line-height: 1.4;
-    color: #334155;
+    color: var(--color-text-body);
     margin-bottom: 4px;
 }
 
@@ -192,9 +225,9 @@ body {
 }
 
 .project_item a {
-    font-size: 12px;
-    font-weight: 500;
-    color: #FB6D3A;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
     text-decoration: none;
 }
 
@@ -213,20 +246,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 12.5px;
+    font-size: var(--font-size-body);
     line-height: 1.35;
 }
 
 .edu_title {
-    font-weight: 700;
-    color: #000000;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-heading);
 }
 
 .department {
-    font-weight: 500;
-    color: #4A5568;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
     font-style: italic;
-    font-size: 11.5px;
+    font-size: var(--font-size-subxs);
 }
 
 /* Languages (Full Width Inline Row) */
@@ -235,13 +268,13 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    font-size: 12.5px;
-    color: #334155;
+    font-size: var(--font-size-body);
+    color: var(--color-text-body);
 }
 
 .lang_item {
-    font-weight: 500;
-    color: #1A1A1A;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-main);
 }
 
 /* Print & PDF Export (Fits on 1 Page for both A4 & US Letter in Safari & Chrome) */
@@ -251,7 +284,7 @@ body {
     }
 
     html, body {
-        background-color: #FFFFFF !important;
+        background-color: var(--color-bg-card) !important;
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -266,7 +299,7 @@ body {
         padding: 0 !important;
         box-shadow: none !important;
         border-radius: 0 !important;
-        background-color: #FFFFFF !important;
+        background-color: var(--color-bg-card) !important;
     }
 
     .about_name {
@@ -274,7 +307,7 @@ body {
     }
 
     .contacts {
-        font-size: 12px;
+        font-size: var(--font-size-sm);
     }
 
     .section_title {
@@ -286,7 +319,7 @@ body {
     }
 
     .skills_item {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
     }
 
     .work_header {
@@ -295,15 +328,15 @@ body {
     }
 
     .work_position {
-        font-size: 12px;
+        font-size: var(--font-size-sm);
     }
 
     .period {
-        font-size: 11px;
+        font-size: var(--font-size-xs);
     }
 
     .work_list_item {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
     }
 
     .project_position {
@@ -312,36 +345,32 @@ body {
     }
 
     .projects_text {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
     }
 
     .project_item a {
-        font-size: 11px;
+        font-size: var(--font-size-xs);
     }
 
     .education_item {
-        font-size: 11.5px;
-    }
-
-    .education_item {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
     }
 
     .languages_inline {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
         gap: 6px;
     }
 
     .lang_item {
-        font-size: 11.5px;
+        font-size: var(--font-size-subxs);
     }
 
     .contact_link, .project_item a {
-        color: #1A1A1A !important;
+        color: var(--color-text-main) !important;
     }
 
     .organization, .about_position {
-        color: #FB6D3A !important;
+        color: var(--color-primary) !important;
     }
 
     /* Keep individual entries together and prevent orphaned titles */
